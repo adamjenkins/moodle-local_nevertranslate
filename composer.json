@@ -1,0 +1,20 @@
+{
+    "name": "adamjenkins/moodle-local_nevertranslate",
+    "description": "Stops browsers and translation services from automatically translating a Moodle site, using every page-level technique they honour, each switchable by the admin.",
+    "type": "moodle-local",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Adam Jenkins",
+            "email": "adam@wisecat.net"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/adamjenkins/moodle-local_nevertranslate/issues",
+        "source": "https://github.com/adamjenkins/moodle-local_nevertranslate"
+    },
+    "require": {
+        "moodle/moodle": ">=4.5",
+        "moodle/composer-installer": "*"
+    }
+}
