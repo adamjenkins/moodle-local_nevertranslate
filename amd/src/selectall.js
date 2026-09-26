@@ -43,10 +43,13 @@ export const init = (settingid, label) => {
     toggle.id = toggleid;
     toggle.setAttribute('aria-controls', boxes.map((box) => box.id).join(' '));
 
+    // A <strong> rather than a Bootstrap utility class: the bold class differs between
+    // Bootstrap 4 (Moodle 4.5) and 5 (Moodle 5.x), and the other one is flagged as deprecated.
     const toggletext = document.createElement('label');
     toggletext.htmlFor = toggleid;
-    toggletext.className = 'fw-bold font-weight-bold';
-    toggletext.textContent = label;
+    const strong = document.createElement('strong');
+    strong.textContent = label;
+    toggletext.append(strong);
 
     const wrapper = document.createElement('div');
     wrapper.className = 'local_nevertranslate-selectallnone mb-1';

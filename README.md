@@ -5,8 +5,9 @@ services from automatically translating a Moodle site. It injects every
 page-level technique those tools are known to honour into every page of the
 site. An administrator can switch each technique on or off.
 
-Supports Moodle 4.5 to 5.2 (`$plugin->supported = [405, 502]`). The CI matrix in
-`.github/workflows/ci.yml` covers 4.5, 5.0, 5.1 and 5.2; so far only 5.2 has been verified locally.
+Declares support for Moodle 4.5 to 5.2 (`$plugin->supported = [405, 502]`), but it is tested
+on Moodle 5.2 only: the CI workflow in `.github/workflows/ci.yml` runs MOODLE_502_STABLE (PHP 8.3
+and 8.4, PostgreSQL and MariaDB).
 
 ## Installation
 
