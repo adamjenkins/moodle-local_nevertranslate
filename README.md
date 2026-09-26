@@ -5,14 +5,12 @@ services from automatically translating a Moodle site. It injects every
 page-level technique those tools are known to honour into every page of the
 site. An administrator can switch each technique on or off.
 
-Declares support for Moodle 4.5 to 5.2 (`$plugin->supported = [405, 502]`), but it is tested
-on Moodle 5.2 only: the CI workflow in `.github/workflows/ci.yml` runs MOODLE_502_STABLE (PHP 8.3
-and 8.4, PostgreSQL and MariaDB).
+Requires Moodle 5.2 (`$plugin->supported = [502, 502]`). The CI workflow in
+`.github/workflows/ci.yml` tests MOODLE_502_STABLE on PHP 8.3 and 8.4, PostgreSQL and MariaDB.
 
 ## Installation
 
-1. Copy the plugin to `local/nevertranslate` in your Moodle code (`public/local/nevertranslate`
-   on Moodle 5.1+).
+1. Copy the plugin to `public/local/nevertranslate` in your Moodle code.
 2. Run `php admin/cli/upgrade.php` (or visit Site administration > Notifications).
 3. Configure it at Site administration > Plugins > Local plugins > Never translate.
 
