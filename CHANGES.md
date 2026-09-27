@@ -1,5 +1,9 @@
 # Changes
 
+## Unreleased
+
+- Declare Moodle 5.3 support.
+
 ## v0.1.0
 
 - First release. Injects, on every themed page of the site, the techniques that

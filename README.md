@@ -5,8 +5,9 @@ services from automatically translating a Moodle site. It injects every
 page-level technique those tools are known to honour into every page of the
 site. An administrator can switch each technique on or off.
 
-Requires Moodle 5.2 (`$plugin->supported = [502, 502]`). The CI workflow in
-`.github/workflows/ci.yml` tests MOODLE_502_STABLE on PHP 8.3 and 8.4, PostgreSQL and MariaDB.
+Requires Moodle 5.2 or 5.3 (`$plugin->supported = [502, 503]`). The CI workflow in
+`.github/workflows/ci.yml` tests MOODLE_502_STABLE on PHP 8.3 and 8.4, PostgreSQL and MariaDB;
+moodle.git main (5.3) as a non-blocking job.
 
 ## Installation
 
