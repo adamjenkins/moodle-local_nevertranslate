@@ -1,0 +1,25 @@
+# camp listing manifest — descriptive content for your plugin's page.
+# Edit freely and commit; camp ingests this file at each tagged release.
+# Schema: https://camp-registry.org/schema/listing.schema.json
+name: local_nevertranslate
+summary: 'A Moodle local plugin that stops browsers, browser extensions and translation services from automatically translating site pages.'
+description: |
+  Adds every page-level opt-out that translators are known to honour to every
+  themed Moodle page: translate="no" and the notranslate class on html and body,
+  the google notranslate meta tag (the only markup that stops Chrome desktop and
+  Android from offering to translate), robots notranslate and X-Robots-Tag, plus
+  a small guard script that restores the markers if they are removed. An opt-in
+  Revert option reloads a page that has been translated anyway. Each technique
+  can be switched on or off by the site administrator. No markup can hide the
+  browser's own Translate menu item; browser policies are needed for that.
+labels:
+  # Required disclosure labels — pick all that apply (RFC §4.7):
+  #   fully-free | freemium | paid-service | external-account
+  #   donation-supported | commercial-support-available
+  - fully-free
+# screenshots:
+#   - path: .camp/screenshots/overview.png
+#     caption: Main view
+links:
+  docs: https://github.com/adamjenkins/moodle-local_nevertranslate#readme
+  issues: https://github.com/adamjenkins/moodle-local_nevertranslate/issues
