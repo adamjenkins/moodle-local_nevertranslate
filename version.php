@@ -25,8 +25,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_nevertranslate';
-$plugin->version   = 2026092600;
+$plugin->version   = 2026100400;
 $plugin->requires  = 2026042000;
 $plugin->supported = [502, 503];
-$plugin->release   = '0.1.0';
+$plugin->release   = '0.1.1';
 $plugin->maturity  = MATURITY_ALPHA;
