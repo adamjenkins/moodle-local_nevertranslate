@@ -1,5 +1,9 @@
 # Changes
 
-## v0.1.1
+## v0.1.2
 
-- Declare Moodle 5.3 support.
+- Maturity raised from Alpha to Beta.
+- Continuous integration now tests against the released Moodle 5.3
+  (MOODLE_503_STABLE) instead of Moodle's development branch.
+- composer.json: the moodle/moodle requirement now uses a caret constraint
+  (`^5.2`).

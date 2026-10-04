@@ -4,6 +4,15 @@ All notable changes to this plugin are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.1.2] - 2026-10-04
+
+### Changed
+
+- Maturity raised from Alpha to Beta.
+- Continuous integration tests against the released Moodle 5.3
+  (MOODLE_503_STABLE) instead of Moodle's development branch.
+- composer.json: the moodle/moodle requirement uses a caret constraint (`^5.2`).
+
 ## [0.1.1] - 2026-10-04
 
 ### Changed
