@@ -17,9 +17,15 @@ labels:
   #   fully-free | freemium | paid-service | external-account
   #   donation-supported | commercial-support-available
   - fully-free
-# screenshots:
-#   - path: .camp/screenshots/overview.png
-#     caption: Main view
+screenshots:
+  - path: .camp/screenshots/01-course-page-markers.png
+    caption: 'A student''s course page. The panel (added for this screenshot) lists the markers the plugin put on the live page, read from the page itself: all seven are present.'
+  - path: .camp/screenshots/02-reading-guard.png
+    caption: 'The guard script: a quotation pasted into a reading with translate="yes" (outlined) is switched to translate="no" in the browser. The panel was added for this screenshot.'
+  - path: .camp/screenshots/03-page-source.png
+    caption: 'The page source: translate="no" and class="notranslate" on the html element, the Google and robots meta tags, and the start of the guard script.'
+  - path: .camp/screenshots/04-admin-settings.png
+    caption: 'The one setting: a checkbox for each technique, with Select all/none. Revert is off by default.'
 links:
   docs: https://github.com/adamjenkins/moodle-local_nevertranslate#readme
   issues: https://github.com/adamjenkins/moodle-local_nevertranslate/issues
